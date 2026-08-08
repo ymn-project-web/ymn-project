@@ -147,18 +147,52 @@
             </div>
         </section>
 
-        <section id="contact" class="contact-section">
-            <div class="contact-inner">
-                <p class="section-label section-label-light">CONTACT</p>
-                <h2>まずは、お気軽にご相談ください。</h2>
-                <p>
-                    AI活用・マーケティング・ホームページ制作について、
-                    お客様の状況やご希望を伺いながらご提案します。
-                </p>
-            <span class="button button-white">お問い合わせ（デモ表示）</span>
-<p class="contact-note">※ポートフォリオ用サイトのため、お問い合わせ機能は動作しません。</p>
+<section id="contact" class="contact-section">
+    <div class="contact-inner">
+        <p class="section-label section-label-light">CONTACT</p>
+        <h2>まずは、お気軽にご相談ください。</h2>
+
+        <p class="contact-lead">
+            AI業務改善・Webサイト制作・マーケティング支援について、<br>
+            お客様の状況やご希望を伺いながらご提案します。
+        </p>
+
+        <form
+            class="contact-form"
+            action="https://formspree.io/f/xrpzepyr"
+            method="POST"
+        >
+            <div class="form-group">
+                <label for="name">お名前</label>
+                <input type="text" id="name" name="name" required>
             </div>
-        </section>
+
+            <div class="form-group">
+                <label for="email">メールアドレス</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="company-name">会社名・屋号</label>
+                <input type="text" id="company-name" name="company">
+            </div>
+
+            <div class="form-group">
+                <label for="message">ご相談内容</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+
+            <button type="submit" class="button button-white">
+                送信する
+            </button>
+        </form>
+
+        <p class="contact-note">
+            内容を確認後、折り返しご連絡いたします。
+        </p>
+    </div>
+</section>        
+        
     </main>
 
     <footer class="site-footer">
