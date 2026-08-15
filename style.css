@@ -497,6 +497,40 @@ position: relative;
 }
 
 /* ========================================
+   実践記録（note）
+======================================== */
+.note-section {
+    background: var(--blue-light);
+}
+
+.note-card {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 40px;
+    border: 1px solid rgba(31, 95, 158, 0.18);
+    border-radius: var(--radius);
+    background: var(--white);
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.note-card h2 {
+    margin-bottom: 16px;
+    color: var(--navy-dark);
+    font-size: clamp(2rem, 3vw, 2.8rem);
+}
+
+.note-card p:not(.section-label) {
+    margin-bottom: 28px;
+}
+
+@media (max-width: 640px) {
+    .note-card {
+        padding: 34px 22px;
+    }
+}
+
+/* ========================================
    お問い合わせ
 ======================================== */
 .contact-section {
