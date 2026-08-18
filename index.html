@@ -6,6 +6,19 @@
     <meta name="description" content="Y.M.N projectは、AI業務改善を中心に、Webサイト制作・マーケティング支援・AIエージェント設計を通じて、小さな会社や個人事業の業務改善と成長を支援します。">
     <title>Y.M.N project | AI業務改善・Web制作・マーケティング支援</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .faq-list{max-width:860px;margin:0 auto;display:grid;gap:14px}
+        .faq-item{overflow:hidden;border:1px solid var(--border);border-radius:12px;background:var(--white);box-shadow:0 4px 16px rgba(18,52,91,.05)}
+        .faq-item summary{position:relative;padding:22px 58px 22px 24px;color:var(--navy);font-weight:700;cursor:pointer;list-style:none}
+        .faq-item summary::-webkit-details-marker{display:none}
+        .faq-item summary::after{content:"＋";position:absolute;top:50%;right:24px;color:var(--blue);font-size:1.4rem;transform:translateY(-50%)}
+        .faq-item[open] summary::after{content:"－"}
+        .faq-item p{margin:0;padding:0 24px 22px;color:var(--text-light)}
+        .faq-action{margin-top:36px;text-align:center}
+        .faq-action p{margin-bottom:18px}
+    </style>
+
 </head>
 
 <body id="home">
@@ -21,6 +34,7 @@
                 <a href="#services">事業内容</a>
                 <a href="#company">会社概要</a>
                 <a href="#journal">実践記録</a>
+                <a href="#faq">よくある質問</a>
                 <a href="#contact">お問い合わせ</a>
             </nav>
         </div>
@@ -155,6 +169,47 @@
                     <h2>Y.M.N projectの実践記録</h2>
                     <p>AI・ITを使った業務改善や、1人企業の仕組みづくりをnoteで発信しています。</p>
                     <a href="https://note.com/ymnpro2026" class="button button-outline" target="_blank" rel="noopener noreferrer">noteで実践記録を読む</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="faq" class="section section-white">
+            <div class="section-inner">
+                <div class="section-heading">
+                    <p class="section-label">FAQ</p>
+                    <h2>よくある質問</h2>
+                    <p>ご相談前によくいただくご質問をまとめました。</p>
+                </div>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>AIに詳しくなくても相談できますか？</summary>
+                        <p>はい、大丈夫です。専門用語をできるだけ使わず、現在のお仕事やお困りごとを伺いながら、一緒に整理します。AIの知識は必要ありません。</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>何を改善すればよいか分からなくても大丈夫ですか？</summary>
+                        <p>はい。毎回手作業で行っていること、時間がかかること、同じ情報を何度も入力していることなどを伺い、改善できる業務があるか整理します。</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>小規模事業者・1人社長でも依頼できますか？</summary>
+                        <p>はい。Y.M.N projectは、小さな会社や1人社長、個人事業主の業務改善を中心に支援しています。必要な範囲から小さく始められます。</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>相談したら必ず契約が必要ですか？</summary>
+                        <p>いいえ。まず現在の状況を伺い、改善の必要性や方法を整理します。ご提案内容と費用をご確認いただいたうえで、依頼するかご判断いただけます。</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>費用はどのように決まりますか？</summary>
+                        <p>業務の内容、必要な機能、作業範囲、サポート期間などを確認してお見積りします。作業を始める前に、内容と費用を分かりやすくご案内します。</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>AIを導入せず、業務整理だけ依頼できますか？</summary>
+                        <p>はい。AIは目的ではありません。業務の整理、情報の置き場所の見直し、既存ツールの活用だけで改善できる場合は、無理にAIを導入しません。</p>
+                    </details>
+                </div>
+                <div class="faq-action">
+                    <p>ほかにも気になることがあれば、お気軽にご相談ください。</p>
+                    <a href="#contact" class="button button-primary">無料相談はこちら</a>
                 </div>
             </div>
         </section>
