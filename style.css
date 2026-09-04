@@ -458,6 +458,11 @@ position: relative;
         var(--white);
 }
 
+.works-list {
+    display: grid;
+    gap: 42px;
+}
+
 .work-card {
     display: grid;
     grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
@@ -549,6 +554,85 @@ position: relative;
 .work-link {
     align-self: flex-start;
     gap: 10px;
+}
+
+.work-card-featured {
+    border-color: rgba(31, 95, 158, 0.34);
+    box-shadow: 0 22px 54px rgba(18, 52, 91, 0.16);
+}
+
+.memoria-visual {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    background:
+        radial-gradient(circle at 50% 42%, rgba(174, 210, 236, 0.2), transparent 26%),
+        linear-gradient(145deg, #0a1727 0%, #102b45 54%, #163d5c 100%);
+    color: var(--white);
+    text-align: center;
+}
+
+.memoria-visual::before,
+.memoria-visual::after {
+    position: absolute;
+    content: "";
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 50%;
+}
+
+.memoria-visual::before {
+    width: 58%;
+    aspect-ratio: 1;
+}
+
+.memoria-visual::after {
+    width: 42%;
+    aspect-ratio: 1;
+}
+
+.memoria-visual-kicker,
+.memoria-visual-title,
+.memoria-visual-line,
+.memoria-visual-copy {
+    position: relative;
+    z-index: 1;
+}
+
+.memoria-visual-kicker {
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 0.68rem;
+    letter-spacing: 0.24em;
+}
+
+.memoria-visual-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(2.8rem, 7vw, 5.4rem);
+    font-weight: 400;
+    letter-spacing: 0.13em;
+    line-height: 1;
+}
+
+.memoria-visual-line {
+    width: 56px;
+    height: 1px;
+    margin: 26px 0 20px;
+    background: rgba(255, 255, 255, 0.52);
+}
+
+.memoria-visual-copy {
+    font-family: Georgia, "Yu Mincho", "Hiragino Mincho ProN", serif;
+    font-size: 0.88rem;
+    letter-spacing: 0.14em;
+}
+
+.work-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 /* ========================================
@@ -986,6 +1070,22 @@ body > section:not(.section):not(.contact-section) h2 {
 
     .work-link {
         width: 100%;
+    }
+
+    .works-list {
+        gap: 28px;
+    }
+
+    .memoria-visual {
+        padding: 30px 20px;
+    }
+
+    .memoria-visual-title {
+        font-size: clamp(2.3rem, 14vw, 4rem);
+    }
+
+    .work-actions {
+        flex-direction: column;
     }
 
     .company-table th,
