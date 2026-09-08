@@ -638,6 +638,44 @@ position: relative;
 /* ========================================
    会社概要
 ======================================== */
+.work-template-route {
+    margin-top: 28px;
+    color: var(--text-light);
+    font-size: 0.875rem;
+    line-height: 1.65;
+}
+
+.work-template-audience {
+    margin: 0 0 4px;
+    font-weight: 600;
+}
+
+.work-template-context {
+    margin: 0;
+}
+
+.work-template-route a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    padding-block: 8px;
+    max-width: 100%;
+    color: var(--navy);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+
+.work-template-route a:hover {
+    text-decoration-thickness: 2px;
+}
+
+.work-template-route a:focus-visible {
+    outline: 2px solid var(--navy);
+    outline-offset: 4px;
+}
+
 .company-inner {
     display: grid;
     grid-template-columns: 0.9fr 1.1fr;
